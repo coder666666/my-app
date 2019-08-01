@@ -1,0 +1,30 @@
+.login-container {
+    padding: 0 5%;
+    padding-top: 90px;
+    box-sizing: border-box;
+    background: #eee;
+    .login-form {
+        width: 300px;
+        float: right;
+        .ant-form-item-children {
+            .ant-checkbox-wrapper, >span {
+                float: left;
+            }
+            .login-form-forgot {
+                float: right;
+            }
+        }
+        .login-form-button {
+            width: 100%
+        }
+    }
+}
+// .login-container .login-form {
+// max-width: 300px;
+// }
+// .login-container .login-form-forgot {
+// float: right;
+// }
+// .login-container .login-form-button {
+// width: 100%;
+// }

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Router, Switch, Route } from 'react-router-dom';
+import {  BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import logo from './logo.svg';
 // import Menu from './components/Menu'
+import Login from './login'
 import { getMenuList } from './server'
 
 import './App.css';
@@ -16,22 +16,18 @@ function App() {
 
   const [menuData, setMenuData] = useState([]);
 
-  useEffect(() => {
-    setMenuData(menuList())
-  }, []);
-  console.log(menuData)
+  // useEffect(() => {
+  //   setMenuData(menuList())
+  // }, []);
   // const renderRouter = router.map(item => (
   //   <Route path={item.path} components={item.components} />
-  // ))
+  // ));
 
   return (
     <div className="App">
-      {/* <Menu />
       <Router>
-        <Switch>
-          { renderRouter }
-        </Switch>
-      </Router> */}
+        <Route exact path="/login" component={Login} />
+      </Router>
     </div>
   );
 }

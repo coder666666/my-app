@@ -85,7 +85,7 @@ axios.interceptors.response.use(response => {
  */
 
 export default (reqObj = {}) => {
-  const { url, method, data, param, isShowLoading, isShowErrorMsg } = reqObj;
+  const { url, method, data, param, isShowLoading = true, isShowErrorMsg = true } = reqObj;
 
   return new Promise((resolve, reject) => {
     const reqParam = {
