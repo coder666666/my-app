@@ -3,7 +3,7 @@ const { override, fixBabelImports } = require('customize-cra');
 module.exports = override(
   fixBabelImports('import', {
     libraryName: 'antd',
-    libraryDirectory: 'ex',
+    libraryDirectory: 'es',
     style: 'css'
   })
 );
