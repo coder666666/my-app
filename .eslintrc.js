@@ -4,8 +4,16 @@ module.exports = {
     "react-hooks"
   ],
   "extends": [
-    "eslint:recommended"
+    "eslint:recommended",
+    "plugin:react/recommended"
   ],
+  "parserOptions": {
+    "sourceType": "module",
+    parser: "babel-eslint",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
   "rules": {
     // ...
     "react-hooks/rules-of-hooks": "error", // 检查 Hook 的规则

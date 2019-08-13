@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {  BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // import Menu from './components/Menu'
-import Login from './login'
+import Login from './pages/login'
 import { getMenuList } from './server'
 
 import './App.css';

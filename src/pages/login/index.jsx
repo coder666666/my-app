@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
 
-import { login } from '../server/login'
+import { login } from '../../server/login'
 
 import './index.scss'
 
