@@ -1,0 +1,55 @@
+.workplace-header {
+  margin-left:  30px;
+  padding-top: 10px;
+  text-align: left;
+  .workplace-header-title{
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 600
+  }
+  .workplace-header-content{
+    padding-bottom: 20px;
+    overflow: hidden;
+    .header-content-mainLeft{
+      float: left;
+      display: flex;
+      align-items: center;
+      .avatar{
+        >img{
+          width: 100px;
+          height: 100px;
+          margin-right: 30px;
+          border-radius: 50%;
+        }
+      }
+      .user-info{
+        line-height: 2;
+        .user-info-title{
+          font-size: 18px;
+          .username{
+            font-weight: 600
+          }
+        }
+      }
+    }
+    .header-content-mainRight{
+      float: right;
+      display: flex;
+      justify-content: space-around;
+      .mainRight-content{
+        margin: 0 20px;
+        text-align: center;
+        .mainRight-content-num{
+          font-size: 24px;
+          font-weight: 600
+        }
+      }
+      .mainRight-line{
+        width: 2px;
+        height: 40px;
+        margin-top: 5px;
+        border-right: 1px solid #eee
+      }
+    }
+  }
+}

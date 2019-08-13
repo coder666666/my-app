@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 
 import { Input, Tooltip, Icon, Menu, Dropdown, Badge } from 'antd'
+import HeaderDesc from './HeaderDesc'
 
-import './index.scss'
+import './css/index.scss'
 
 const Home = props => {
   let inputSearchRef = React.createRef();
@@ -13,7 +14,7 @@ const Home = props => {
     console.log(inputSearchRef)
     inputSearchRef.current.focus();
   }
-
+console.log(inputSearchRef)
   const dropdownMenu_user = (
     <Menu>
       <Menu.Item key="0">
@@ -79,6 +80,7 @@ const Home = props => {
           </li>
         </ul>
       </header>
+      <HeaderDesc />
     </div>
   )
 }

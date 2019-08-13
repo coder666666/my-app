@@ -7,15 +7,18 @@
     background: #fff;
     box-shadow: 0 1px 4px rgba(0,21,41,.08);
     .header-left{
+      margin-left: 30px;
       svg{
         width: 25px;
         height: 25px;
-        margin-left: 10px;
+        // margin-left: 10px;
       }
     }
     .header-right{
+      height: 100%;
       display: flex;
       justify-content: space-around;
+      align-items: center;
       .search{
         display: flex;
         .search-input{
