@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import {  BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {  BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
-// import Menu from './components/Menu'
+import Layout from './components/Layout'
 import Login from './pages/login'
-import Home from './pages/home'
 import { getMenuList } from './server'
 
 import './App.css';
@@ -27,8 +26,10 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Route path="/home" component={Home}></Route>
+        <Route path="/" component={Layout}></Route>
+        {/* <Route path="/home" component={Home}></Route> */}
         <Route path="/login" component={Login}></Route>
+        <Redirect to="/" />
       </Router>
     </div>
   );

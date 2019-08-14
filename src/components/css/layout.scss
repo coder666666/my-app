@@ -1,0 +1,11 @@
+main{
+  overflow: hidden;
+  >aside{
+    float: left;
+    width: 300px;
+  }
+  >section{
+    float: left;
+    width: calc(100% - 300px)
+  }
+}
