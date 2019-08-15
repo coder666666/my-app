@@ -30,6 +30,9 @@
             font-weight: 600
           }
         }
+        .user-info-role{
+          color: rgba(0, 0, 0, 0.45)
+        }
       }
     }
     .header-content-mainRight{
@@ -48,7 +51,7 @@
         width: 2px;
         height: 40px;
         margin-top: 5px;
-        border-right: 1px solid #eee
+        border-right: 1px solid #aaa
       }
     }
   }

@@ -16,6 +16,7 @@ const Index = () => {
       <section>
         <Header></Header>
         <Route path="/home" component={Home}></Route>
+        {/* <Redirect to="/home" /> */}
       </section>
     </main>
   )

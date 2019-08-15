@@ -26,10 +26,10 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Route path="/" component={Layout}></Route>
+        <Route path="/home" component={Layout}></Route>
         {/* <Route path="/home" component={Home}></Route> */}
         <Route path="/login" component={Login}></Route>
-        <Redirect to="/" />
+        {/* <Redirect from="" to="/home" /> */}
       </Router>
     </div>
   );

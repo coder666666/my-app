@@ -1,6 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import { Icon } from 'antd'
+
+import './css/fastStart.scss'
+
 const Index = props => {
   const data = [{
     text: '表单新增',
@@ -21,7 +25,7 @@ const Index = props => {
   }];
 
   const navMenuBtn = data.map(item => (
-    <NavLink key={item.path} className="navBtn" to={{ path: item.path, state: item.state }}></NavLink>
+    <NavLink key={item.path} className="navBtn" to={{ path: item.path, state: item.state }}>{item.text}</NavLink>
   ))
   return (
     <section className="firstStart">
@@ -29,7 +33,7 @@ const Index = props => {
       <div className="firstStart-content">
         {navMenuBtn}
         <div className="addNav">
-          <span className="addIcon">+</span>
+          <span className="addIcon"><Icon type="plus" /></span>
           <span>添加</span>
         </div>
       </div>
